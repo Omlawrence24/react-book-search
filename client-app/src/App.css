@@ -1,0 +1,19 @@
+/* ****************************HEADER****************************** */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.header{ 
+  padding: 30px 0 30px 0;
+  background: black;
+  color: aliceblue;
+  text-align: center;
+}
+
+header h1{
+  display:inline;
+  margin-left: 15px;
+  font-weight:300;
+}
