@@ -2,24 +2,31 @@ import React, { Component } from "react"
 import SearchArea from "./SearchArea";
 import BookList from "./BookList"
 import request from "superagent";
+
+// this is a smart component it holds the site state
 class Books extends Component {
 
     constructor(props) {
         super(props);
-
+// this marks the chaanging factors in the site 
         this.state= {
             books:[],
             searchField: "",
             sort:""
         }
-    }
+    } 
+
+    //  this event covers the users input and creates an event that will enable the api to be called 
+    // 
     searchBook = (e) =>{
-        e.preventDafault();
+        e.preventDefault();
         request
         .get("https://www.googleapis.com/books/v1/volumes")
         .query({q: this.state.searchField })
         .then((data) => {
-            const cleanData = this.cleanedData(data)
+            console.log(data)
+            // this output the clean data function to cover any null info 
+            const cleanData = this.cleanData(data)
             this.setState({ books: [cleanData]})
         })
     }

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const BooksCard = (props) => {
+const BookCard = (props) => {
     return (
         <div className="card-container">
-            <img src=""  alt="" />
+            <img src={props.image}  alt="book"/>
             <div className="desc">
             <h2>Tittle:{props.title} </h2>
             <h3> Author:{props.author}</h3>
@@ -17,4 +17,4 @@ const BooksCard = (props) => {
     )
 }
 
-export default BooksCard
+export default BookCard
