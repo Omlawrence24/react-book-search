@@ -3,7 +3,7 @@
   ### MIT
   
   ## Description
-  This Site allows the User to type in any key word of their choice and in return recieve a list books that gives standard Info on each book.
+  This Site allows the User to type in any key word of their choice and in return recieve a list books that gives standard info on each book.
  
   ## Table of Contents
   
@@ -17,7 +17,7 @@
   You will need to install Bootstrap, Superagent, and React.
 
   ## Usage
-  This site allows access to all of teh book in the Google API catalogue. When the user types in a key word they are given a list of all related
+  This site allows access to all of the book in the Google API catalogue. When the user types in a key word they are given a list of all related
   books as weel as teh option to sort through them by Newest to Oldest.
   
   ## License
