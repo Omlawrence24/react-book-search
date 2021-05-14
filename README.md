@@ -18,7 +18,7 @@
 
   ## Usage
   This site allows access to all of the books in the Google API catalogue. When the user types in a key word they are given a list of all related
-  books as well as te option to sort through them by Newest to Oldest.
+  books as well as the option to sort through them by Newest to Oldest.
   
   ## License
   MIT
@@ -27,10 +27,7 @@
   API, package.json, React, VS Code, JavaScript   
 
   ## Developer
-  
-  Walk through video of how this site generates Employee Profile via Node.js
-   https://drive.google.com/file/d/1PL-nQiwA3BCnm_R8NKh_i3V7uYCLSZ-D/view
-  
+ 
   Preview of Site 
   Sorting 
   ![image](https://user-images.githubusercontent.com/73300219/118299312-97dbb680-b4ae-11eb-86df-07f31250b520.png)
