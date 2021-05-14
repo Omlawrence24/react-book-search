@@ -24,7 +24,7 @@
   MIT
 
   ## Technology
-  API, package.json, React, VS Code, JavaScript
+  API, package.json, React, VS Code, JavaScript  
 
   ## Developer
   
