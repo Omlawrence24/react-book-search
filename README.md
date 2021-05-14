@@ -3,7 +3,7 @@
   ### MIT
   
   ## Description
-  This Site allows the User to type in any key word of thier choice and in return recieve a list books that gives standard Info on said book.
+  This Site allows the User to type in any key word of their choice and in return recieve a list books that gives standard Info on said book.
  
   ## Table of Contents
   
