@@ -32,7 +32,12 @@
    https://drive.google.com/file/d/1PL-nQiwA3BCnm_R8NKh_i3V7uYCLSZ-D/view
   
   Preview of Site 
+  Sorting 
+  ![image](https://user-images.githubusercontent.com/73300219/118299312-97dbb680-b4ae-11eb-86df-07f31250b520.png)
   
+  ![image](https://user-images.githubusercontent.com/73300219/118299401-b3df5800-b4ae-11eb-8f75-3f54aa53b699.png)
+
+
   Obedia Lawrence
   
   Omlawrence24@gmail.com
