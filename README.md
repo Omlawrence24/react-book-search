@@ -17,8 +17,8 @@
   You will need to install Bootstrap, Superagent, and React.
 
   ## Usage
-  This site allows access to all of the book in the Google API catalogue. When the user types in a key word they are given a list of all related
-  books as weel as teh option to sort through them by Newest to Oldest.
+  This site allows access to all of the books in the Google API catalogue. When the user types in a key word they are given a list of all related
+  books as well as te option to sort through them by Newest to Oldest.
   
   ## License
   MIT
