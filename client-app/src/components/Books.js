@@ -8,7 +8,7 @@ class Books extends Component {
 
     constructor(props) {
         super(props);
-// this marks the chaanging factors in the site 
+// this marks the changing factors in the site 
         this.state= {
             books:[],
             searchField: "",
@@ -26,8 +26,8 @@ class Books extends Component {
         .then((data) => {
             console.log(data)
             // this output the clean data function to cover any null info 
-            const cleanData = this.cleanData(data)
-            this.setState({ books: [cleanData]})
+            // const cleanData = this.cleanData(data)
+            this.setState({ books: [...data.body.items]})
         })
     }
 
@@ -41,36 +41,37 @@ handleSort = (e) => {
     this.setState({sort: e.target.value })
 }
 
-cleanData = (data) => {
-    const cleanedData = data.body.items.map((book) =>{
-        if(book.volumeInfo.hasOwnProperty("publishedDate") === false) {
-        book.volumeInfo["publishedDate"] = "0000"
-    }
-    else if (book.volumeInfo.hasOwnProperty("imageLinks") === false) {
-        book.volumeInfo["imageLinks"] = {thumbnail: "https://vignette.wikia.nocookie.net/pandorahearts/images/a/ad/Not_available.jpg/revision/latest?cb=20141028171337"}
-    }
+// cleanData = (data) => {
+//     const cleanedData = data.body.items.map((book) =>{
+//         if(book.volumeInfo.hasOwnProperty("publishedDate") === false) {
+//         book.volumeInfo["publishedDate"] = "0000"
+//     }
+//     else if (book.volumeInfo.hasOwnProperty("imageLinks") === false) {
+//         book.volumeInfo["imageLinks"] = {thumbnail: "https://vignette.wikia.nocookie.net/pandorahearts/images/a/ad/Not_available.jpg/revision/latest?cb=20141028171337"}
+//     }
     
-    return book;
-})
+//     return book;
+// })
     
- return cleanedData;
+//  return cleanedData;
 
 
-}
+// }
     render() {
-        const sortedBooks = this.state.books.sort((a, b) => {
-            if (this.state.sort === "Newest") {
-                return parseInt(b.volumeInfo.publishedDate.substring(0,4)) - parseInt(a.volumeInfo.publishedDate.substring(0, 4));
-            }
-            else if (this.state.sort === "Oldest") {
-                return parseInt(a.volumeInfo.publishedDate.substring(0,4)) - parseInt(b.volumeInfo.publishedDate.substring(0, 4));
-            }
-        })
-        
+        // const sortedBooks = this.state.books.sort((a, b) => {
+        //     if (this.state.sort === "Newest") {
+        //         return parseInt(b.volumeInfo.publishedDate.substring(0,4)) - parseInt(a.volumeInfo.publishedDate.substring(0, 4));
+        //     }
+        //     else if (this.state.sort === "Oldest") {
+        //         return parseInt(a.volumeInfo.publishedDate.substring(0,4)) - parseInt(b.volumeInfo.publishedDate.substring(0, 4));
+        //     }
+        // }
+        // )
         return (
+            
         <div>
             <SearchArea handleSort={this.handleSort} searchBook={this.searchBook} handleSearch={this.handleSearch}/>
-            < BookList books={sortedBooks} />
+            < BookList books={this.state.books} />
         </div>
     )
     }

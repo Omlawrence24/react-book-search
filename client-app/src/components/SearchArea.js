@@ -9,8 +9,8 @@ const SearchArea = (props) => {
         <input 
            onChange={props.handleSearch}
             type="text"/>
-        <button onClick={props.searchBook}  className="primary" type="button">
-        search
+        <button onClick={props.searchBook}  className="primary" type="submit">
+        Search
         </button>
         <select defaultValue="Sort" onChange={props.handleSort}>
             <option value="Sort"></option>
